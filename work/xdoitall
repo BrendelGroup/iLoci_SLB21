@@ -39,14 +39,14 @@ rws wfscripts/make-Tables1-3.sh
 conda activate iLoci
 mkdir figures
 jupyter nbconvert --to notebook --execute --inplace  notebooks/make-SF1.ipynb
-eog figures/LSB20GB-SuppFig1.png
+eog figures/SLB21-SuppFig1.png
 
 
 # Looking at r-scans of iiLocus lengths:
 #
 jupyter nbconvert --to notebook --execute --inplace \
 	--ExecutePreprocessor.timeout=600 notebooks/make-SF2.ipynb
-eog figures/LSB20GB-SuppFig2_*.png
+eog figures/SLB21-SuppFig2_*.png
 
 
 # Exploring genome compactness (see README_refr-genome-compactness.md):
@@ -63,7 +63,7 @@ du -sh
 # ... generates in subdirectory "tables:"
 #
 #phisigma-refr-shuffled-centroids-delta500.tsv
-#LSB20GB-SuppTable1-miloci.tex
+#SLB21-SuppTable1-miloci.tex
 #phisigma-refr-centroids-delta750.tsv
 #phisigma-refr-centroids-delta300.tsv
 #phisigma-refr-centroids-delta500.tsv
@@ -101,7 +101,7 @@ du -sh
 #
 jupyter nbconvert --to notebook --execute --inplace notebooks/make-SF3.ipynb
 jupyter nbconvert --to notebook --execute --inplace notebooks/make-SF4.ipynb
-eog figures/LSB20GB-SuppFig3_*.png figures/LSB20GB-SuppFig4_*.png
+eog figures/SLB21-SuppFig3_*.png figures/SLB21-SuppFig4_*.png
 
 
 # Exploring a group of genomes (see README_explore-Chlorophyta.md):
@@ -188,7 +188,7 @@ time rws ./get-statistics.sh
 # ... creates *-*locus-summaries.tsv *_centroids.tsv
 
 rws python make-SuppTable234_taxa_averages.py 
-mv LSB20GB-SuppTable*_averages.tsv ../tables
+mv SLB21-SuppTable*_averages.tsv ../tables
 
 # Consolidate the output files into directory OUTPUT:
 #
