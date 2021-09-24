@@ -17,7 +17,7 @@ part of the same command.
 For example, the command
 
 ```bash
-$rws fidibus --workdir=data \
+rws fidibus --workdir=data \
         --numprocs=2        \
         --refr=Scer,Cele    \
         download prep
@@ -26,7 +26,7 @@ $rws fidibus --workdir=data \
 is identical to the command
 
 ```bash
-$rws fidibus --workdir=data --numprocs=2 --refr=Scer,Cele download prep
+rws fidibus --workdir=data --numprocs=2 --refr=Scer,Cele download prep
 ```
 
 
@@ -41,10 +41,11 @@ The following provides one way of doing this:
 sudo dnf install libXcomposite libXcursor libXi libXtst libXrandr \
                  alsa-lib mesa-libEGL libXdamage mesa-libGL libXScrnSaver
 
-#Download the Anaconda3 installer from https://www.anaconda.com/, then e.g.:
+#Download and run the Anaconda3 installer from https://www.anaconda.com/, e.g.:
 #
-bash ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
-\rm  ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+bash ./Anaconda3-2021.05-Linux-x86_64.sh
+\rm  ./Anaconda3-2021.05-Linux-x86_64.sh
 
 #In a new shell:
 #
