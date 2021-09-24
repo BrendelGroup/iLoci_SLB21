@@ -18,8 +18,8 @@ fidibus-milocus-summary.py --workdir=data --outfmt=tsv \
 # ... generating *.tex files for the manuscript:
 #
 fidibus-ilocus-summary.py  --workdir=data --outfmt=tex \
-	Scer Cele Crei Mtru Agam Dmel Xtro Drer Mmus Hsap Vcar Pdom Dpul Mvit  > tables/LSB20GB-Table1-iloci.tex
+	Scer Cele Crei Mtru Agam Dmel Xtro Drer Mmus Hsap Vcar Pdom Dpul Mvit  > tables/SLB21-Table1-iloci.tex
 fidibus-pilocus-summary.py --workdir=data --outfmt=tex \
-	Scer Cele Crei Mtru Agam Dmel Xtro Drer Mmus Hsap Vcar Pdom Dpul Mvit  > tables/LSB20GB-Table2-piloci.tex
+	Scer Cele Crei Mtru Agam Dmel Xtro Drer Mmus Hsap Vcar Pdom Dpul Mvit  > tables/SLB21-Table2-piloci.tex
 fidibus-milocus-summary.py --workdir=data --outfmt=tex \
-	Scer Cele Crei Mtru Agam Dmel Xtro Drer Mmus Hsap Vcar Pdom Dpul Mvit  > tables/LSB20GB-Table3-miloci.tex
+	Scer Cele Crei Mtru Agam Dmel Xtro Drer Mmus Hsap Vcar Pdom Dpul Mvit  > tables/SLB21-Table3-miloci.tex
