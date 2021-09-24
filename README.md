@@ -1,6 +1,6 @@
-# iLoci_Lai2020
-Procedures and data for the iLoci study described in Lai, Standage and
-Brendel (2020)
+# iLoci_SLB21
+Procedures and data for the iLoci study described in Lai, Standage, and
+Brendel (2021)
 
 
 ## Overview
@@ -8,7 +8,7 @@ Brendel (2020)
 This repository documents application of
 [AEGeAn](https://github.com/BrendelGroup/AEGeAn) code to derive, classify, and
 analyze genomic interval loci (iLoci) as described in the paper
-Lai, Standage, and Brendel (2020).
+Standage, Lai, and Brendel (2021).
 Please refer to the
 [AEGeAn Installation](https://github.com/BrendelGroup/AEGeAn/blob/master/INSTALL.md)
 site for details on how to obtain the relevant software.
@@ -17,19 +17,19 @@ The simplest way to get going is to use the AEGeAn
 
 ```bash
 cd
-git clone https://github.com/BrendelGroup/iLoci_Lai2020
-cd iLoci_Lai2020/work
-singularity pull --name aegean.simg shub://BrendelGroup/AEGeAn
-rws="singularity exec -e -B ~/iLoci_Lai2020 ~/iLoci_Lai2020/work/aegean.simg"
-$rws fidibus -h
+git clone https://github.com/BrendelGroup/iLoci_SLB21
+cd iLoci_SLB21/work
+wget https://BrendelGroup.org/SingularityHub/aegean.sif
+alias rws="singularity exec -e -B ~/iLoci_SLB21 ~/iLoci_SLB21/work/aegean.simg"
+rws fidibus -h
 ```
 
 In the above example, you clone this repository into your Linux home directory,
-go into the iLoci_Lai2020/work directory that has been created, download the AEGeAn
+go into the iLoci_SLB21/work directory that has been created, download the AEGeAn
 Singularity container, define the shell variable _rws_ ("run with singularity"),
 and check that everything works by showing the "help" lines for the AEGeAn
 command _fididbus_.
 
-To reproduce the data discussed in Lai, Standage and Brendel (2020), go to
+To reproduce the data discussed in Standage, Lai, and Brendel (2021), go to
 [./work](./work) and follow the instructions in the [README](./work/README.md)
 file.
