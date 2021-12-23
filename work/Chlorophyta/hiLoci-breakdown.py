@@ -5,9 +5,6 @@ import sys
 
 
 def status(histat):
-    """
-    FIXME
-    """
     ilocus_status = dict()
     next(histat)
     for record in histat:

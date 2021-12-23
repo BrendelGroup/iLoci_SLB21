@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-NUMPROCS=7
+NUMPROCS=9
 
 # Run fidibus cluster and store the results in the Chlorophyta directory:
 #
@@ -22,8 +22,10 @@ python3 Chlorophyta/det-Chlorophyta-status.py Chlorophyta/Chlorophyta.hiLoci.tsv
 mkdir Chlorophyta/blastdbs
 for species in Vcar Apro Crei Csub Cvar Mpus Mcom Oluc Otau
 do
-    makeblastdb -in data/${species}/${species}.prot.fa -dbtype prot \
-		-parse_seqids -out Chlorophyta/blastdbs/${species}
+    cat data/${species}/${species}.prot.fa | sed -e "s#gnl|${species}|##" > tmp_${species}.prot.fa
+    makeblastdb \
+	-in tmp_${species}.prot.fa -dbtype prot -parse_seqids -out Chlorophyta/blastdbs/${species}
+    \rm tmp_${species}.prot.fa
 done
 
 # Refined analysis:
@@ -68,7 +70,7 @@ do
     MuSeqBox -i Chlorophyta/blastdbs/${species}.unmatched.blastp \
              -L 100 -d 16 -l 24 \
         > Chlorophyta/blastdbs/${species}.unmatched.msb
-    egrep "^${species}:XP|^${species}:NP" Chlorophyta/blastdbs/${species}.unmatched.msb \
+    egrep "^XP|^NP" Chlorophyta/blastdbs/${species}.unmatched.msb \
         | awk '{ print $1 }' \
         | sort \
         | uniq \
