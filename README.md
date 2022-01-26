@@ -1,6 +1,6 @@
 # iLoci_SLB21
 Procedures and data for the iLoci study first described in Standage, Lai, and
-Brendel (2021; [BioRxiv pre-print]](https://www.biorxiv.org/content/10.1101/2021.10.03.462917v2)).
+Brendel (2021; [BioRxiv pre-print](https://www.biorxiv.org/content/10.1101/2021.10.03.462917v2)).
 
 
 ## Overview
