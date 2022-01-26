@@ -41,7 +41,7 @@ Daniel S Standage, Tim Lai, and Volker P Brendel
 (2022) _iLoci: Robust evaluation of genome content and organization for
 provisional and mature genome assemblies._
 Nucleic Acids Research Genomics and Bioinformatics, in print.
-Pre-print: [at BioRxiv](https://www.biorxiv.org/content/10.1101/2021.10.03.462917v2)
+Pre-print: [at BioRxiv](https://www.biorxiv.org/content/10.1101/2021.10.03.462917v2).
 
 
 ## Contact
