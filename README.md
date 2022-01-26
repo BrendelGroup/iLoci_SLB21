@@ -26,7 +26,7 @@ rws fidibus -h
 
 In the above example, you clone this repository into your Linux home directory,
 go into the iLoci_SLB21/work directory that has been created, download the AEGeAn
-Singularity container, define the shell variable _rws_ ("run with singularity"),
+Singularity container, define the bash alias _rws_ ("run with singularity"),
 and check that everything works by showing the "help" lines for the AEGeAn
 command _fididbus_.
 
