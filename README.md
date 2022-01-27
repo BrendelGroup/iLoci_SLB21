@@ -13,7 +13,7 @@ Please refer to the
 [AEGeAn Installation](https://github.com/BrendelGroup/AEGeAn/blob/master/INSTALL.md)
 site for details on how to obtain the relevant software.
 The simplest way to get going is to use the AEGeAn
-[Singularity](https://sylabs.io/docs/) container, e.g. as follows:
+[Singularity](https://apptainer.org/) container, e.g. as follows:
 
 ```bash
 cd
@@ -29,6 +29,10 @@ go into the iLoci_SLB21/work directory that has been created, download the AEGeA
 Singularity container, define the bash alias _rws_ ("run with singularity"),
 and check that everything works by showing the "help" lines for the AEGeAn
 command _fididbus_.
+
+Of course this assumes that you have [Apptainer/Singularity](https://apptainer.org/) installed on your system.
+Check whether there is package built for your system.
+Otherwise, follow the instructions to [install Singularity from source code](https://apptainer.org/user-docs/master/quick_start.html#quick-installation-steps).
 
 To reproduce the data discussed in Standage, Lai, and Brendel (2022), go to
 [./work](./work) and follow the instructions in the [README](./work/README.md)
