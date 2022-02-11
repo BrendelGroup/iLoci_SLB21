@@ -1,4 +1,4 @@
-# iLoci_SLB21
+# iLoci_SLB22NARGB
 Procedures and data for the iLoci study first described in Standage, Lai, and
 Brendel (2021; [BioRxiv pre-print](https://www.biorxiv.org/content/10.1101/2021.10.03.462917v2)).
 
@@ -17,15 +17,15 @@ The simplest way to get going is to use the AEGeAn
 
 ```bash
 cd
-git clone https://github.com/BrendelGroup/iLoci_SLB21
-cd iLoci_SLB21/work
+git clone https://github.com/BrendelGroup/iLoci_SLB22NARGB
+cd iLoci_SLB22NARGB/work
 wget https://BrendelGroup.org/SingularityHub/aegean.sif
-alias rws="singularity exec -e -B ~/iLoci_SLB21 ~/iLoci_SLB21/work/aegean.sif"
+alias rws="singularity exec -e -B ~/iLoci_SLB22NARGB ~/iLoci_SLB21/work/aegean.sif"
 rws fidibus -h
 ```
 
 In the above example, you clone this repository into your Linux home directory,
-go into the iLoci_SLB21/work directory that has been created, download the AEGeAn
+go into the iLoci_SLB22NARGB/work directory that has been created, download the AEGeAn
 Singularity container, define the bash alias _rws_ ("run with singularity"),
 and check that everything works by showing the "help" lines for the AEGeAn
 command _fididbus_.
