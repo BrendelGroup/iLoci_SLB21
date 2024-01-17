@@ -41,4 +41,4 @@ To run the entire analysis broken down by iLocus type, run the corresponding cha
 This generates a TSV file containing the query iLoci and all of the chains against the target, along with the attributes of both. We are mainly interested in the maximal chain lengths for each query. Additional python scripts 
 then processes the TSV files and produces the relevant counts. These may be done by calling hsp.sh and then counts.sh
 
-See [comparisons_plot.ipynb](https://github.com/timlai4/IntervalLoci/blob/comparisons/compare/comparison_plots.ipynb) for visualizations of these data.
+See [make-F5-F6.ipynb](https://github.com/BrendelGroup/iLoci_SLB22NARGB/blob/main/work/notebooks/make-F5-F6.ipynb) for visualizations of these data.
